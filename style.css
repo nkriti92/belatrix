@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	position: relative;
+	margin: 0;
+	min-height: 100%;
+}
+.content {
+	padding-bottom: 20px;
+}
+header {
+	position: relative;
+	height: 240px;
+}
+.title {
+	bottom: 50px;
+	left: 10%;
+	position: absolute;
+}
+.titlebar {
+	width: 100%;
+	position: relative;
+	position: fixed;
+	top: 0px;
+	background-color: white;
+}
+.titlebarshadow {
+	box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
+}
+.hidetitle {
+	visibility: hidden;
+}
+.titlebarbuttons {
+	display: inline-flex;
+	position: absolute;
+	right: 15px;
+}
+.titlebarbutton {
+	display: inline-flex;
+	height: 30px;
+	padding: 20px;
+}
+.logobutton {
+	display:inline-block;
+	width: 50px;
+	height: auto;
+	padding-left: 2%;
+	padding-top: 10px;
+}
+.pagetitle {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	padding: 20px;
+	height: 30px;
+	padding-left: 40px;
+}
+.logo {
+	height: auto;
+	width: 50px;
+}
+footer {
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	text-align: center;
+}
+.grid {
+	max-width: 1200px;
+	margin: auto;
+}
+.row {
+	width: 100%;
+	height: auto;
+}
+.thumbnail {
+	height: 100%;
+	padding: 25px;
+}
+.thumbnailimage {
+	width: 100%;
+	height: auto;
+	box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
+}
+.profileimage {
+	width: 70%;
+  height: auto;
+  border-radius: 600px;
+  margin-left:50px;
+}
+i{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.profilepicture {
+
+}
+.image{
+  width: 100%;
+  height:100%;
+}
+.leftimage {
+  padding-right: 10px;
+}
+.rightimage {
+  padding-left: 10px;
+}
