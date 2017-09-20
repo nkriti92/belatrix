@@ -1,3 +1,4 @@
+/*General Styles*/
 * {
     box-sizing: border-box;
 }
@@ -27,6 +28,7 @@ header {
 	position: fixed;
 	top: 0px;
 	background-color: white;
+	z-index: 10;
 }
 .titlebarshadow {
 	box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
@@ -70,6 +72,11 @@ footer {
 	bottom: 0px;
 	text-align: center;
 }
+i {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/*Home Page Styles*/
 .grid {
 	max-width: 1200px;
 	margin: auto;
@@ -87,26 +94,44 @@ footer {
 	height: auto;
 	box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
 }
+/*About Page Styles*/
 .profileimage {
 	width: 70%;
   height: auto;
   border-radius: 600px;
   margin-left:50px;
 }
-i{
-	padding-left: 10px;
-	padding-right: 10px;
-}
-.profilepicture {
-
-}
+/*Detail Page Styles*/
 .image{
   width: 100%;
   height:100%;
 }
-.leftimage {
+.leftcol {
   padding-right: 10px;
 }
-.rightimage {
+.rightcol {
   padding-left: 10px;
+}
+.detail {
+	padding: 70px;
+	max-width: 1200px;
+	margin: auto;
+}
+.videocontainer {
+	position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.videocontainer iframe {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@media only screen and (min-width: 768px) {
+	.videocontainer {
+  	padding-bottom: 30%;
+	}
 }
