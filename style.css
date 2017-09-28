@@ -86,7 +86,13 @@ i {
 	height: auto;
 }
 .thumbnail {
-	height: 100%;
+	
+}
+.thumbnailtext {
+	padding: 25px;
+}
+.thumb {
+	/*height: 100%;*/
 	padding: 25px;
 }
 .thumbnailimage {

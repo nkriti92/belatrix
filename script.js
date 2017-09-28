@@ -12,12 +12,24 @@ $(document).ready(function() {
 	$('.thumbnail').click(function(e) {
 		if($(this).hasClass('col-4')) {
       // $('.expandable-box.out').not($(this)).removeClass('out');
-      // $(this).removeClass('col-4');
-      $(this).find('.thumbnailbutton').addClass('border');
+      // var width = $(this).find('.thumbnailimage').css('width');
+      $(this).removeClass('col-4');
+      $(this).addClass('col-12');
+      $(this).find('.thumb').removeClass('col-12');
+      $(this).find('.thumb').addClass('col-4');
+      $(this).find('.thumbnailtext').removeClass('col-0');
+      $(this).find('.thumbnailtext').addClass('col-8');
+      // $(this).find('.thumbnailimage').css('width', width);
+      // $(this).find('.thumbnailtext').css('height', 'auto');
+      // $(this).find('.thumbnailtext').css('max-width', '100%');
     }
     else {
-      // $(this).addClass('col-4');
-      $(this).find('.thumbnailbutton').removeClass('border');
+      $(this).addClass('col-4');
+      $(this).removeClass('col-12');
+      $(this).find('.thumbnailimage').css('width', '100%');
+      $(this).find('.thumbnailtext').css('height', '0');
+      $(this).find('.thumbnailtext').css('max-width', '0');
+      // $(this).find('.thumbnailbutton').removeClass('border');
     }
 	});
 });
