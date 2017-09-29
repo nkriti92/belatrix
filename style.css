@@ -10,12 +10,39 @@ body {
 	margin: 0;
 	min-height: 100%;
 }
+.bluetext {
+	color: #006269
+}
+h1 {
+	font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 80px;
+  font-weight: 100;
+  letter-spacing: -.044em;
+  line-height: 86px;
+}
+h2 {
+	font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 56px;
+  font-weight: 300;
+  letter-spacing: -.026em;
+  line-height: 60px;
+}
+h3 {
+	font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 34px;
+  font-weight: 300;
+  letter-spacing: -.01em;
+  line-height: 40px;
+}
 .content {
-	padding-bottom: 20px;
+	padding-bottom: 100px;
 }
 header {
 	position: relative;
-	height: 240px;
+	height: 340px;
 }
 .title {
 	bottom: 50px;
@@ -45,6 +72,11 @@ header {
 	display: inline-flex;
 	height: 30px;
 	padding: 20px;
+	font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
 .logobutton {
 	display:inline-block;
@@ -57,9 +89,15 @@ header {
 	display: inline-block;
 	position: absolute;
 	top: 0px;
-	padding: 20px;
-	height: 30px;
-	padding-left: 40px;
+	padding: 18px;
+	height: 40px;
+	padding-left: 100px;
+	font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -.012em;
+  line-height: 32px;
 }
 .logo {
 	height: auto;
@@ -70,7 +108,13 @@ footer {
 	right: 0px;
 	left: 0px;
 	bottom: 0px;
+	padding: 15px;
 	text-align: center;
+	font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
 i {
 	padding-left: 10px;
@@ -84,21 +128,36 @@ i {
 .row {
 	width: 100%;
 	height: auto;
+	/*border: dotted red 1px;*/
+
 }
 .padding {
 	padding: 25px;
 }
-.thumbnail {
-	/*transition: width 0.2s ease-out;*/
+.line {
+	border: dotted white 1px;
+	height: 100%;
+	
 }
-.thumbnailbutton {
-	/*height: 100%;*/
+.thumbnail {
+	height: 100%;
 	padding: 25px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.thumbnail:hover {
+	box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
+}
+.thumbnailtext {
+	font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+	font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
 .thumbnailimage {
 	width: 100%;
 	height: auto;
-	box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
 }
 /*About Page Styles*/
 .profileimage {
@@ -181,4 +240,37 @@ div.panel {
 }
 .border {
 	border: solid 10px black;
+}
+.overlaybackground {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 12;
+	background-color: rgba(0,0,0,0.5);
+	visibility: hidden;
+}
+.overlay {
+	position: fixed;
+	top: 5%;
+	left: 2%;
+	height: 90%;
+	width: 96%;
+	z-index: 15;
+	background-color: white;
+	padding: 25px;
+	overflow-y: scroll;
+	visibility: hidden;
+}
+.closebutton {
+	position: fixed;
+	top: 4%;
+	left: 1%;
+	z-index: 20;
+	background-color: white;
+	border-radius: 500px;
+	padding: 10px;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
 }
