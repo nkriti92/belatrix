@@ -14,6 +14,14 @@ $(document).ready(function() {
 		$('#googlecontent').css('visibility','visible');
 		$('.overlaybackground').css('visibility','visible');
 	});
+	$('#gatech').click(function(e) {
+		$('#gatechcontent').css('visibility','visible');
+		$('.overlaybackground').css('visibility','visible');
+	});
+	$('#microsoft').click(function(e) {
+		$('#microsoftcontent').css('visibility','visible');
+		$('.overlaybackground').css('visibility','visible');
+	});
 	$('.closebutton').click(function(e) {
 		$('.overlay').css('visibility','hidden');
 		$('.overlaybackground').css('visibility','hidden');
