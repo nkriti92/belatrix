@@ -85,13 +85,13 @@ i {
 	width: 100%;
 	height: auto;
 }
-.thumbnail {
-	
-}
-.thumbnailtext {
+.padding {
 	padding: 25px;
 }
-.thumb {
+.thumbnail {
+	/*transition: width 0.2s ease-out;*/
+}
+.thumbnailbutton {
 	/*height: 100%;*/
 	padding: 25px;
 }
