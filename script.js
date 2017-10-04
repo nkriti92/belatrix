@@ -22,6 +22,23 @@ $(document).ready(function() {
 		$('#microsoftcontent').css('visibility','visible');
 		$('.overlaybackground').css('visibility','visible');
 	});
+	$('#stuntracker').click(function(e) {
+		$('#stuntrackercontent').css('visibility','visible');
+		$('.overlaybackground').css('visibility','visible');
+	});
+	$('#leaderboard').click(function(e) {
+		$('#leaderboardcontent').css('visibility','visible');
+		$('.overlaybackground').css('visibility','visible');
+	});
+	$('#locationcontrol').click(function(e) {
+		$('#locationcontrolcontent').css('visibility','visible');
+		$('.overlaybackground').css('visibility','visible');
+	});
+	$('#watch').click(function(e) {
+		$('#watchcontent').css('visibility','visible');
+		$('.overlaybackground').css('visibility','visible');
+	});
+	
 	$('.closebutton').click(function(e) {
 		$('.overlay').css('visibility','hidden');
 		$('.overlaybackground').css('visibility','hidden');
