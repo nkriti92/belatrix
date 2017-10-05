@@ -254,7 +254,12 @@ i {
   	padding-bottom: 30%;
 	}
 }
-
+.blue {
+	color: rgba(0,98,105,0.5);
+	font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+}
 
 
 

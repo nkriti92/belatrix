@@ -22,6 +22,10 @@ $(document).ready(function() {
 		$('#microsoftcontent').css('visibility','visible');
 		$('.overlaybackground').css('visibility','visible');
 	});
+	$('#handwhich').click(function(e) {
+		$('#handwhichcontent').css('visibility','visible');
+		$('.overlaybackground').css('visibility','visible');
+	});
 	$('#stuntracker').click(function(e) {
 		$('#stuntrackercontent').css('visibility','visible');
 		$('.overlaybackground').css('visibility','visible');
