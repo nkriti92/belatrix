@@ -105,6 +105,29 @@ header {
 	position: absolute;
 	right: 15px;
 }
+.titlebarmenu {
+	display: inline-flex;
+	position: absolute;
+	right: 0px;
+	visibility: hidden;
+}
+@media only screen and (max-width: 480px) {
+	.titlebarbuttons {
+		visibility: hidden;
+	}
+	.titlebarmenu {
+		visibility: visible;
+	}
+}
+.menuitems {
+	position: fixed;
+	right: 10px;
+	top: 60px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
+	padding-bottom: 15px;
+	visibility: hidden;
+}
 .titlebarbutton {
 	display: inline-flex;
 	height: 30px;
@@ -114,6 +137,7 @@ header {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+  cursor: pointer;
 }
 .logobutton {
 	display:inline-block;
@@ -135,6 +159,11 @@ header {
   font-weight: 300;
   letter-spacing: -.012em;
   line-height: 32px;
+}
+@media only screen and (max-width: 800px) {
+	.pagetitle {
+		padding-left: 25px;
+	}
 }
 @media only screen and (max-width: 480px) {
 	.pagetitle {

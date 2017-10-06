@@ -10,6 +10,16 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function() {
+	$('.titlebarmenu').click(function(e) {
+		var visibility = $('.menuitems').css('visibility');
+		if (visibility == 'visible') {
+			$('.menuitems').css('visibility','hidden');
+		}
+		else {
+			$('.menuitems').css('visibility','visible');
+		}
+	});
+
 	$('#google').click(function(e) {
 		$('#googlecontent').css('visibility','visible');
 		$('.overlaybackground').css('visibility','visible');
