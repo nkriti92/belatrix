@@ -32,7 +32,9 @@ $(document).ready(function() {
 		$('#microsoftcontent').css('visibility','visible');
 		$('.overlaybackground').css('visibility','visible');
 	});
-	$('#handwhich').click(function(e) {
+	$('.handwhich').click(function(e) {
+		$('.overlay').css('visibility','hidden');
+		$('.overlaybackground').css('visibility','hidden');
 		$('#handwhichcontent').css('visibility','visible');
 		$('.overlaybackground').css('visibility','visible');
 	});
